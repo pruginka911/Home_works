@@ -1,0 +1,54 @@
+HW_1. The first part
+Linux terminal (GitBash) commands
+
+1) Посмотреть где я pwd
+2) Создать папку mkdir qa_1
+3) Зайти в папку cd qa_1
+4) Создать 3 папки mkdir qa2 qa3 qa4
+5) Зайти в любоую папку cd qa_2
+6) Создать 5 файлов (3 txt, 2 json) touch q1.txt q2.txt q3.txt q1.json q2.json
+7) Создать 3 папки mkdir qa5 qa6 qa7
+8. Вывести список содержимого папки ls -la
+9) + Открыть любой txt файл cat q1.txt
+10) + написать туда что-нибудь, любой текст. cat >> 1.txt
+11) + сохранить и выйти. Ctrl+C
+12) Выйти из папки на уровень выше cd qa_1
+—
+13) переместить любые 2 файла, которые вы создали, в любую другую папку. mv 2.txt 3.txt qa_1
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку. cp 2.txt 3.txt qa_1
+15) Найти файл по имени find q2.txt
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает. grep qq q2.txt
+Даёт возможность вести поиск строки и можно найти конкретные слова в файле, те найдёт файл с нужной строчкой, текст в файле или отфильтрует из вывода только пару нужных строк.
+17) вывести несколько первых строк из текстового файла head 1.txt
+18) вывести несколько последних строк из текстового файла tail 1.txt
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает. less q2.txt
+Используется для поиска определенных участков в больших документах, для просмотра больших текстовых файлов.
+
+20) вывести дату и время  date
+=========
+
+Задание *
+1) Отправить http запрос на сервер.
+http://162.55.220.72:5005/terminal-hw-request
+
+curl http://162.55.220.72:5005/terminal-hw-request
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   237  100   237    0     0   1452      0 --:--:-- --:--:-- --:--:--  1509{"Intro":"Hello!! This is your the first response from server","Tasks":{"Task_1":"Send the next URL in terminal: http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number)","result":["Your_String","Your_number"]}}
+
+
+
+ curl -data "name=Elvira&age=36" http://162.55.220.72:5005/get_method
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: name=Elvira&age=36
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    21  100    18  100     3    120     20 --:--:-- --:--:-- --:--:--   140"Natalia MOLODEC"
+
+
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+
+Пока не сделала, разбираюсь.
+
+
